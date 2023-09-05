@@ -1,0 +1,151 @@
+* {
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%); /*Override pls*/
+  user-select: none;
+}
+#box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 96vh;
+}
+
+.box {
+  background-image:  linear-gradient(hsl(217, 10%, 16%), hsl(213, 19%, 18%));
+  padding: 25px 30px;
+  width: 390px;
+  border-radius: 50px;
+  margin: 8px;
+  height: 394px;
+}
+
+.btn {
+
+  background-color: hsl(213, 23%, 23%);
+  width: 25px;
+  text-align: center;
+  margin: 11px;
+  margin-left: initial;
+  margin-bottom: 40px;
+  padding: 14px;
+  color: hsl(216, 12%, 54%);
+  border-radius: 1000000000px;
+}
+
+.btn:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  cursor: pointer;
+}
+
+.ratings {
+  display: flex;
+  gap: 19px;
+  
+}
+
+#subtitle {
+  width: 400px;
+}
+
+#icon-star {
+  background-color: hsl(213, 23%, 23%);
+  padding: 15px;
+  padding-bottom: 10px;
+  border-radius: 100%;
+  width: 15px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+#title {
+  font-size: 30px;
+  margin-bottom: 0;
+  
+  color: white;
+}
+
+p {
+  color: hsl(216, 12%, 54%)
+}
+
+#submit-btn {
+  border: none;
+  padding: 13px 32px;
+  letter-spacing: 1px;
+  width: 385px;
+  border-radius: 100px;
+  color: inherit;
+  background-color: hsl(25, 97%, 53%);
+  margin-bottom: 20px;
+  font-weight: 700;
+  
+}
+
+#submit-btn:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+  #box-container {
+    height: 100vh;
+
+  }
+
+  .box {
+    width: 360px;
+    margin:  8px 12px;
+  }
+
+  #subtitle {
+    width: 370px;
+  }
+}
+
+
+
+
+.thank-you {
+  text-align: center;
+  display: none;
+}
+
+.thank-you-message {
+  
+  padding-top: 5px;
+}
+
+.thank-you-message h1 {
+  margin-bottom: 0px;
+}
+
+.thank-you-message p {
+  line-height: 25px;
+}
+
+.ty-illu {
+  margin: 14px 0;
+
+}
+
+#message {
+  background-color: hsl(213, 23%, 23%);
+  padding: 8px 11px;
+  border-radius: 100px;
+  
+  width: 170px;
+  margin: 20px auto;
+  margin-bottom: 12px;
+  
+}
+
+#message p {
+  margin: 0;
+  color: hsl(25, 97%, 53%);
+}
